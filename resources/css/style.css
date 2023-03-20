@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-hight: 1.4;
+    font-weight: 400;
+}
+
+/* header and nav */
+header {
+    position: fixed;
+    /* margin-top: -1.5rem; */
+    z-index: 100;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    background-color: #FFE200;
+    box-shadow: 0px 4px 20px;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header .logo-flex {
+    flex: 1;
+}
+
+header .logo {
+    width: 5rem;
+    overflow: hidden;
+}
+
+header .logo img {
+    width: 100%;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    flex: 0 1;
+}
+
+nav li {
+    padding-left: 3rem;
+    list-style-type: none;
+}
+
+nav a, .banner-contact a {
+    color: #4a4a4a;
+    text-decoration: none;
+    vertical-align: bottom;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/*  Main content*/
+main {
+    position: relative;
+    top: 6.5rem;
+}
+
+
+/* banner */
+#banner .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 48rem;
+    background-image: url("/resources/img/photos/loft/loft_fin_2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center; 
+}
+
+
+.banner-left {
+    width: 45%;
+    background-color: hsla(360, 100%, 100%, 0.5);
+    border-radius: 0.625rem;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+.banner-left .belfast h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.banner-left .belfast h2 {
+    font-size: 2.75rem;
+    margin-bottom: 2rem;
+}
+
+.banner-left .belfast p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.belfast span {
+    font-weight: bolder;
+}
+
+.banner-right {
+    width: 25%;
+    overflow: hidden;
+
+}
+
+.banner-right img {
+    max-width: 100%;
+    display: block;
+}
+
+.banner-contact {
+    width: 25%;
+    margin: 2.5rem auto;
+    background-color: hsla(57, 100%, 78%, 0.8);
+    padding: 0.75rem;
+    border-radius: 0.625rem;
+}
+.banner-contact:hover {
+    background-color: hsla(0, 100%, 78%, 0.8);
+}
+
+
+/* about section */
+
+
+

@@ -7,21 +7,29 @@
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
     <!-- google foonts here -->
-</head>
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
 <body>
     <header>
         <div class="content">
             <!-- logo on left -->
-            <figure class="logo">
+            <div class="logo-flex">
+                <div class="logo">
                 <a href="index.html"><img src="./resources/img/Logo/TNC3.png" alt="header logo"></a>
-            </figure>
+            </div>
+            </div>
             <!-- desktop navbar -->
             <nav class="desktop">
                 <ul>
                     <li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#about">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </li>
                 </ul>
             </nav>
@@ -35,20 +43,21 @@
         <!-- top banner. background image of loft-->
         <div id="banner">
             <div class="container">
-                <!-- right section with logo -->
-                <div class="banner-right">
+                <!-- left section with general info -->
+                <div class="banner-left">
                     <div class="belfast">
                         <h1>TNC Carpentry & Building</h1>
                         <h2>Loft Conversions<br>Extensions & Renovations</h2>
-                        <p>Speak to us about your home renovation or extension project<br>
-                        We take on projects in and around the Belfast area</p>
+                        <p>Speak to us about your home renovation or extension project</p>
+                            
+                        <p>We take on projects in and around the <span>Belfast</span> area</p>
                     </div>
                     <div class="banner-contact">
-                        <li><a href="#contact">Contact</a></li>
+                        <a href="#contact">Contact</a>
                     </div>
                 </div>
-                <!-- left section with general info -->
-                <div class="banner-left">
+                <!-- right section with logo -->
+                <div class="banner-right">
                     <div class="big-logo">
                         <img src="./resources/img/Logo/TNC1.png" alt="TNC logo">
                     </div>
