@@ -152,17 +152,71 @@ h3 {
     background-color: hsla(0, 100%, 78%, 0.8);
 }
 
+/* banner media queries */
+/* tablet */
+@media only screen and (max-width: 768px) {
+    #banner .container {
+        flex-flow: column;
+    }
+    .banner-left {
+        width: 90%;
+    }
+    .banner-right {
+        display: none;
+    }
+
+    /* about media tablet*/
+    #about .container {
+        flex-flow: column;
+    }
+    #about .container .about-left {
+        width: 100%;
+    }
+    #about .container .about-right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav li {
+        padding-left: 0.75;
+    }
+    nav a {
+        font-size: 1.25rem;
+        padding-left: 0.95rem;
+    }
+    nav ul {
+        margin:0;
+        padding: 0;
+        /* display: block; */
+    }
+    header .content {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+}
+}
+
 
 /* about section */
-
-#about .container {
+#about {
     margin-top: 3rem;
+    border-top: 1px solid gray;
+}
+
+.about-TNC h1 {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+#about .container {
     background-color: hsla(55, 100%, 85%, 0.15);
     padding: 3.5rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
 
@@ -201,18 +255,18 @@ h3 {
     width: 55%;
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.about-title h1 {
-    margin-top: 0;
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
-    font-weight: 500;
+.about-title {
+    display: flex;
+    flex-flow: column;
+    justify-content: between;
 }
+
 .about-title h2 {
     font-size: 2.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 .about-title h3 {
     font-size: 2rem;
@@ -231,6 +285,44 @@ h3 {
 .about-aside p{
     margin-bottom: 0.5rem;
 }
+
+@media only screen and (max-width: 768px) {
+    /* about media tablet*/
+    #about .container {
+        flex-flow: column;
+    }
+    #about .container .about-left {
+        width: 100%;
+    }
+    #about .container .about-right {
+        width: 100%;
+    }
+
+    #about h1 {
+        font-size: 2.5rem;
+    }
+    #about h2 {
+        font-size: 2rem;
+    }
+    #about h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #about h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    #about h2 {
+        font-size: 1.75rem;
+    }
+    #about h3 {
+        font-size: 1.25rem;
+    }
+}
+
+
 
 
 /*  Projects section */
@@ -290,6 +382,48 @@ figcaption {
 
 /* FILL IN THE OTHER PROJECTS DETAILS HERE */
 
+/* Projects media queries */
+@media only screen and (max-width: 768px) {
+    #projects .img-container {
+        width: 45%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    #projects h1 {
+        font-size: 2.5rem;
+    }
+    #projects h2 {
+        font-size: 2rem;
+    }
+    #projects h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #projects h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    #projects h2 {
+        font-size: 1.75rem;
+    }
+    #projects h3 {
+        font-size: 1.25rem;
+    }
+    .projects-title h3 {
+        display: none;
+    }
+    #projects figcaption {
+        font-size: 1rem;
+        padding-top: 0.25rem;
+        padding-bottom: 1rem;
+    }
+    .project {
+        margin: 0;
+    }
+}
 
 /* CONTACT Section */
 
@@ -306,6 +440,10 @@ figcaption {
     border-bottom: 1px solid darkgray;
 }
 
+#contact a {
+    text-decoration: none;
+    color: #4a4a4a;
+}
 .email a {
     text-decoration: none;
     color: #4a4a4a;
@@ -317,4 +455,33 @@ footer {
     align-items: center;
     justify-content: space-between;
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #contact h1 {
+        font-size: 2.5rem;
+    }
+    #contact h2 {
+        font-size: 2rem;
+    }
+    #contact h3 {
+        font-size: 1.5rem;
+    }
+    #contact .container {
+        flex-flow: column;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    #contact .container .phone {
+        padding: 1.5rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+    footer {
+        font-size: 0.75rem;
+        display: block;
+    }
+    .copyright {
+        margin-bottom: 0.75rem;
+    }
 }
