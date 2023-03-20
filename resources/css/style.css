@@ -8,6 +8,8 @@ html {
     font-size: 16px;
     line-hight: 1.4;
     font-weight: 400;
+    background-color: hsla(55, 100%, 85%, 0.2);
+    color: #4a4a4a;
 }
 
 img {
@@ -95,6 +97,19 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+h2 {
+    font-size: 2.75rem;
+    font-weight: 500;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
 .banner-left .belfast h1 {
     font-size: 3.5rem;
     font-weight: 500;
@@ -141,17 +156,22 @@ h1, h2, h3 {
 /* about section */
 
 #about .container {
-    z-index: 10;
-    backround-color: #383435;
+    margin-top: 3rem;
+    background-color: hsla(55, 100%, 85%, 0.15);
     padding: 3.5rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 5rem;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 .about-left {
+    box-sizing: border-box;
     width: 30%;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1px solid darkgray;
 }
 
 .digger-photo {
@@ -166,17 +186,19 @@ h1, h2, h3 {
 }
 
 .tom h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
 .tom h3 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
 .about-right {
-    width: 50%;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    width: 55%;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -186,6 +208,7 @@ h1, h2, h3 {
     margin-top: 0;
     font-size: 3.5rem;
     margin-bottom: 2rem;
+    font-weight: 500;
 }
 .about-title h2 {
     font-size: 2.75rem;
@@ -211,5 +234,87 @@ h1, h2, h3 {
 
 
 /*  Projects section */
+#projects {
+    border-bottom: 1px solid gray;
+}
+.center {
+    text-align: center;
+}
+
+#projects .container {
+    background-color: hsla(55, 100%, 85%, 0.15);
+    padding: 2rem 1rem;
+}
+
+.projects-title {
+    padding: 1rem 1rem 3rem;
+}
+
+.project {
+    margin-bottom: 1rem;
+}
+.project, .images-container {
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid darkgray;
+    padding: 1rem;
+}
+
+.images-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+#projects .img-container {
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 2.5rem;
+    font-weight: 500;
+}
 
 
+/* FILL IN THE OTHER PROJECTS DETAILS HERE */
+
+
+/* CONTACT Section */
+
+#contact {
+    text-align: center;
+    padding: 3rem;
+}
+#contact .container {
+    background-color: hsla(55, 100%, 85%, 0.15);
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid darkgray;
+}
+
+.email a {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+footer {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+}
