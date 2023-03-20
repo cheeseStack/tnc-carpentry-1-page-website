@@ -10,6 +10,11 @@ html {
     font-weight: 400;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 /* header and nav */
 header {
     position: fixed;
@@ -135,5 +140,76 @@ h1, h2, h3 {
 
 /* about section */
 
+#about .container {
+    z-index: 10;
+    backround-color: #383435;
+    padding: 3.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+
+.about-left {
+    width: 30%;
+}
+
+.digger-photo {
+    width: 100%;
+    overflow: hidden;
+}
+
+.digger-photo img {
+    max-width: 100%;
+    display: block;
+
+}
+
+.tom h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.tom h3 {
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.about-right {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.about-title h1 {
+    margin-top: 0;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.about-title h2 {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+}
+.about-title h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about-middle p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.about-middle {
+    margin-bottom: 2rem;
+} 
+.about-aside p{
+    margin-bottom: 0.5rem;
+}
+
+
+/*  Projects section */
 
 
